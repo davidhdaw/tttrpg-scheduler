@@ -1,0 +1,198 @@
+.game-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    min-width: 300px;
+    background-size: auto 100%;
+    height: 450px;
+    border-radius: 20px;
+    border: solid 10px white;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    color:#11BCEB;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+    line-height: 1;
+    font-family: "Pathway Gothic One", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      unicode-bidi: isolate;
+}
+
+.detail-section {
+  margin: 15px;
+  display:flex;
+  flex-direction: column;
+  max-height: 400px;
+  line-height: 1;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+}
+
+
+.fade-section {
+    animation: fade-in 1s;
+    height: 450px;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
+    }
+  }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+  
+  body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+
+.detail-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 300px;
+    min-width: 300px;
+    width: 100%;
+    border-radius: 20px;
+    border: solid 10px white;
+    background-size: auto 100%;
+    height: 450px;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Pathway Gothic One", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      unicode-bidi: isolate;
+}
+
+.detail-name {
+    font-size: 2.5em;
+    font-weight: bold;
+
+}
+
+.detail-year {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+
+}
+
+.detail-subcat {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.detail-cata {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+.detail-description {
+    font-size: 1em;
+    font-weight: bold;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+.detail-bottom-section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.grey-filter {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-filter {
+  background-color: rgba(17, 188, 235, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.card-link:visited {
+    color:#11BCEB
+}
+
+.card-link {
+  color:#11BCEB
+}
+
+.detail-link:visited {
+    color:black
+}
+
+.detail-link:hover {
+    color:black
+}
+
+.detail-link {
+  color:black
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+}
